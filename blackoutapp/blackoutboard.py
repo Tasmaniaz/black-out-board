@@ -12,7 +12,7 @@ class Player:
         self.name = name
         self.currentPos = 0
 
-player1n = Player("Jannic")
+player1n = Player("Pikkemand Pepe")
 player2n = Player("Rene")
 player3n = Player("Tobias")
 player4n = Player("Ich Heis Heise")
@@ -145,7 +145,7 @@ def fields():
     elif (player==59):
         print(name + " is finnished")
     elif (player==60):
-        print(name + " you are finished now please stop playing")
+        player1n = Player("Kusse Kongen")
     
 while 1 == 1:
     dice =  random.choice(range(1,6))
