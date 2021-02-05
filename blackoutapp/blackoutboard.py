@@ -146,6 +146,7 @@ def fields():
         print(name + " is finnished")
     elif (player==60):
         player1n = Player("Kusse Kongen")
+        talletto = 2
     
 while 1 == 1:
     dice =  random.choice(range(1,6))
