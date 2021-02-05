@@ -145,7 +145,7 @@ def fields():
     elif (player==59):
         print(name + " is finnished")
     elif (player==60):
-        print(name + " you are finished now please stop playing")
+        print(name + " is finnishedyes")
     
 while 1 == 1:
     dice =  random.choice(range(1,6))
