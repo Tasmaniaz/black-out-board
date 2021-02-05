@@ -145,8 +145,7 @@ def fields():
     elif (player==59):
         print(name + " is finnished")
     elif (player==60):
-        player1n = Player("Kusse Kongen")
-        talletto = 2
+        print(name + " is finished now there is no more spaces okay?")
     
 while 1 == 1:
     dice =  random.choice(range(1,6))
