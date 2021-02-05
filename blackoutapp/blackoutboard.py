@@ -11,7 +11,7 @@ class Player:
     def __init__(self, name):
         self.name = name
         self.currentPos = 0
-
+"""
 player1n = Player("Pikkemand Pepe")
 player2n = Player("Rene")
 player3n = Player("Tobias")
@@ -23,7 +23,23 @@ players = [player1n, player2n, player3n, player4n, player5n, player6n]
 
 currentPlayer = players[0]
 currentPlayerTurn = 0
-        
+"""
+
+def playerSelects():
+    selectDone = False
+    players = []
+    while selectDone == False:
+        print("Please type player name")
+        playerName = input("")
+        if playerName != "":
+            players.append(Player(playerName))
+            print("Done with adding players?")
+            isDone = input("")
+            if isDone == "yes":
+                selectDone = True
+        else:
+            print("Please type a name")
+    return players
 
 def fields():
     if (player==1):
@@ -147,6 +163,9 @@ def fields():
     elif (player==60):
         print(name + " is finished now there is no more spaces okay?")
     
+players = playerSelects()
+currentPlayer = players[0]
+currentPlayerTurn = 0
 while 1 == 1:
     dice =  random.choice(range(1,6))
     currentPlayer.currentPos += dice
